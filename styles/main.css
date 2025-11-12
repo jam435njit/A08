@@ -1,0 +1,95 @@
+:root {
+    --accent-color: #800000;
+    --gradient-color: #f6bb73;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 90%;
+    width: 80%; max-width: 1024px;
+    margin: auto;
+    border: 2px solid var(--accent-color);
+}
+a:hover, a:focus{
+    font-style: italic;
+    color: var(--accent-color);
+}
+h1, h2, h3, p, ul {
+    padding: .5em 0;
+}
+h1 {
+    font-size: 150%;
+}
+h2 {
+    font-size: 130%;
+    color: var(--accent-color);
+}
+h3 {
+    font-size: 105%;
+}
+ul {
+    margin-left: 2em;
+}
+
+header {
+    line-height: 1.2;
+    border-bottom: 2px solid var(--accent-color);
+    background-image: linear-gradient(
+            30deg, var(--gradient-color) 0%, white 30%, white 65%, var(--gradient-color) 100%);
+    & h2 {
+        font-size: 175%;
+        padding: .5em 0 0 0;
+    }
+    & h3 {
+        font-size: 130%;
+        font-style: italic;
+        padding-bottom: 1em;
+    }
+    & img {
+        float: left;
+        margin: .75em 1em;
+        min-width: 40px; max-width: 80px;
+    }
+}
+
+main {
+    display: flex;
+    padding: 0 1em 1em;
+    & h1 {border-top: solid 1px var(--accent-color);border-bottom: solid 1px var(--accent-color);}
+    & blockquote {
+        font-style: italic;
+        padding-left: 1em;
+    }
+    & img {
+        border: 4px double var(--accent-color);
+        border-radius: 10px;
+    }
+}
+aside {margin: 1px; flex-basis: 25%}
+aside img {min-width:40px; max-width: 75px;}
+section {margin-top: 1px; flex-basis: 75%}
+section img {float: right; margin-top: 0px;
+min-width:100px; max-width: 250px;}
+.featured {border-top: solid 1px var(--accent-color);border-bottom: solid 1px var(--accent-color);}
+.speaker h1 {var(--accent-color)}
+.speaker h2 {color:black}
+.speaker p {padding-top: .5em; padding-bottom: .5em;}
+footer {
+    background-color: var(--accent-color);
+    & p {
+        text-align: center;
+        color: white;
+        padding: 1em 0;
+    }
+}
+
+.large {
+    font-size: 125%;
+}
